@@ -2,7 +2,4 @@
 
 Dear World,
 
-You have no idea what you're about to face once my Vitamin B12 levels are normal.
-
-Sincerely,
-An Aries
+Once I get my vitamin B12 levels up to normal, it's over for you bitches.
