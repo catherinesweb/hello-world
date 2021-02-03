@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+  <html>
+
+  <head>
+    <title>Chaoter 3 Assignment</title>
+
+    <script type="text/javascript">
+      var first_name, last_name, hourly_wage, job_id, job_title, week_hours, weekly_pay;
+
+      job_id="B0123456";
+      job_title="Programmer";
+      week_hours=40;
+
+      first_name=prompt("What is your first name? ", "");
+      last_name=prompt("What is your last name?", "");
+      hourly_wage=prompt("What is your hourly wage?", "");
+
+      hourly_wage=parseInt(hourly_wage);
+      weekly_pay=hourly_wage*week_hours;
+    </script>
+
+    <style media="screen">
+      body{
+        background-color:lightgreen;
+      }
+    </style>
+
+  </head>
+
+  <body>
+
+      <script type="text/javascript">
+
+        document.write("<strong>First Name: </strong>" + first_name + "<br>");
+        document.write("<strong>Last Name: </strong>" + last_name + "<br>");
+        document.write("<strong>Job Title: </strong>" + job_title + "<br>");
+        document.write("<strong>Job ID: </strong>" + job_id + "<br>");
+        document.write("<strong>Weekly Pay: </strong>" + weekly_pay + "<br>");
+        document.write("<br>");
+        document.write("<a href='https://www.tridenttech.edu/'>Trident Technical College</a>");
+
+      </script>
+
+  </body>
+</html>
