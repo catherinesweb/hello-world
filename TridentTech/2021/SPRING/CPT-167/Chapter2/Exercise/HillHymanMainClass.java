@@ -44,7 +44,7 @@ public class HillHymanMainClass
 		
 		//username input
 		System.out.print("\nPlease enter your first name: ");
-		userName = input.next();
+		userName = input.nextLine();
 		
 		System.out.println("input accepted");
 		
@@ -53,7 +53,7 @@ public class HillHymanMainClass
 		
 		//Ask item name
 		System.out.print("What is the name of the item to be purchased? ");
-		itemName = input.next();
+		itemName = input.nextLine();
 		System.out.println("input accepted");
 		
 		//Ask item price
