@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+  <html>
+
+  <head>
+    <title>Chapter 1 Assignment</title>
+    <meta charset="UTF-8">
+    <script>
+      var today = new Date();
+    </script>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+
+    <style>
+
+    body, p {
+      padding: 0px;
+      margin: 0px;
+    }
+
+    header{
+      background-color: #222222;
+      color: #ffffff;
+      text-align: center;
+      padding:10px;
+      margin:0px;
+    }
+
+    main {
+      color: #222222;
+      padding: 50px;
+      margin: 0px auto 0px auto;
+      display: flex;
+      height: 400px;
+    }
+
+    #profile {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.5vw;
+      background: #ffffff;
+      padding:20px 35px 20px 35px;
+      overflow:auto;
+    }
+
+    h1{
+      padding:0px;
+      margin: 0px 0px 20px 0px;
+      font-family: 'Bodoni Moda', serif;
+      font-size: 2em;
+    }
+
+    @media (max-width:850px){
+
+      main{
+        height:auto;
+        width:320px;
+        flex-direction: column;
+      }
+
+      #profile {
+        padding:20px 35px 35px 35px;
+        font-size: 1.8vw;
+      }
+    }
+
+
+      @media (min-width:1190px){
+
+        main{
+          width:1090px;
+        }
+
+        #profile{
+          font-size: 1em;
+        }
+
+      }
+
+
+    </style>
+
+
+  </head>
+
+  <body style="background-color: #ffeaea;">
+
+
+      <header>
+        <script>
+          document.write("This text was written with JavaScript on " + today);
+        </script>
+      </header>
+
+    <main>
+      <div id="profile">
+
+        <p>
+          <h1>My Name is: Catherine</h1>
+        </p>
+
+        <p>
+          Here is a little information about me: <br><br>
+          I am 27 years old, studying computer and internet programming. I have a BFA in studio art focusing in Photography and a minor in Art History. My goal is to become a web developer, but I might try to break into video game development or continue school to do research.<br><br>
+          My life revolves around 2 cats, a dog, and a snake. I'm currently unemployed thanks to covid. I'm trying to get into streaming video games online so maybe I can make some extra cash until I finally get a job.<br><br>
+          I like to travel, surf, and roller skate when I'm not adulting, being lazy, or entertaining my animals.
+        </p>
+
+      </div>
+
+      <div id="picture">
+        <img src="Glacier.jpg" alt="Me with my dog in front of a mountain in Glacier National Park.">
+      </div>
+
+
+</main>
+</body>
+</html>
