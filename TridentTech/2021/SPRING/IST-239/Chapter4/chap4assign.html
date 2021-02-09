@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+  <html>
+
+  <head>
+    <title>Chapter 4 Assignment</title>
+
+    <script type="text/javascript">
+      function input_output()
+      {
+        var hoursWorked = prompt("Enter the hours of work: ", "");
+        hoursWorked = parseInt(hoursWorked);
+
+        var payRate = prompt("Enter your hourly pay rate: ", "");
+        payRate = parseFloat(payRate);
+
+        var taxRate = prompt("Enter the tax rate: ", "");
+        taxRate = parseFloat(taxRate);
+
+        var netPay = calculate_pay(hoursWorked, payRate, taxRate);
+
+        document.write("<h1>Hours Worked: " + hoursWorked + "</h1>");
+        document.write("<h1>Hourly Pay Rate: $" + payRate + ".00</h1>");
+        document.write("<h1>Tax Rate: " + taxRate + "%</h1>");
+        document.write("<h1>Net Pay: $" + netPay + ".00</h1>");
+
+      }
+
+      function calculate_pay(a1, b1, c1)
+      {
+        var preTax = a1 * b1;
+        var taxAmount = preTax * c1/100;
+        var netPay = preTax + taxAmount;
+
+        return netPay;
+      }
+
+    </script>
+
+
+
+  </head>
+
+  <body>
+
+      <script type="text/javascript">
+        input_output();
+      </script>
+
+  </body>
+</html>
