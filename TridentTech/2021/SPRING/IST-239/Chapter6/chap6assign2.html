@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Chapter 6 Assignment 2</title>
+
+    <style>
+      body{
+        background-color:tan;
+      }
+    </style>
+
+    <script type="text/javascript">
+
+      let vehiclePrice = parseInt(prompt("Enter the vehicle price: ", "0"));
+      let downPay = parseInt(prompt("Enter the down payment amount: ", "0"));
+      let interestRate = parseFloat(prompt("Enter the annual interest rate for the loan: ", "0"));
+
+      let loanAmount = vehiclePrice - downPay;
+      let monthInterest = interestRate / 1200;
+
+      function yourLoan(monInt, monNum, lnAm){
+        let base = Math.pow(1 + monInt, monNum);
+        let payment = lnAm * monInt / (1 - (1/base));
+
+        return payment.toFixed(2);
+      }
+
+
+    </script>
+
+  </head>
+  <body>
+
+    <h1>Loan Calculator</h1>
+
+    <script type="text/javascript">
+
+      document.write("Vehicle Price: $" + vehiclePrice.toFixed(2));
+      document.write("<br>Down Payment: $" + downPay.toFixed(2));
+      document.write("<br>Interest Rate: " + interestRate.toFixed(1) + " %");
+      document.write("<br>Loan Amount: $" + loanAmount.toFixed(2));
+
+    </script>
+
+<pre>
+<script type="text/javascript">
+
+document.write("# of Months         Payment/month");
+document.write("<br>");
+document.write("<br>");
+for (let counter = 24; counter <= 60; counter = counter + 12){
+  document.write("    " + counter + "                 $" + yourLoan(monthInterest,counter,loanAmount) + "<br>");
+}
+
+</script>
+</pre>
+
+
+
+
+  </body>
+</html>

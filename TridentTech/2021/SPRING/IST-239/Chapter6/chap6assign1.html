@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+
+    <meta charset="utf-8">
+    <title>Chapter 6 Assignment 1</title>
+
+    <style>
+      body{
+        background-color:pink;
+      }
+    </style>
+
+    <script type="text/javascript">
+
+      const threeTests = 3;
+
+      let gradeLetter = "";
+
+      let testOne = parseInt(prompt("Enter Test 1 Grade", "0"));
+      let testTwo = parseInt(prompt("Enter Test 2 Grade", "0"));
+      let testThree = parseInt(prompt("Enter Test 3 Grade", "0"));
+
+      let average = (testOne + testTwo + testThree) / threeTests;
+
+      if(average <= 100 && average >= 91){
+        gradeLetter = "A";
+      }
+      else if(average <= 91 && average >= 81){
+        gradeLetter = "B";
+      }
+      else if(average <= 80 && average >= 71){
+        gradeLetter = "C";
+      }
+      else if(average <= 70 && average >= 65){
+        gradeLetter = "D";
+      }
+      else if(average < 65){
+        gradeLetter = "F";
+      }
+
+    </script>
+
+
+  </head>
+  <body>
+
+
+    <script type="text/javascript">
+
+      document.write("Your 3 exam scores are:<br>");
+      document.write("Exam 1: " + testOne);
+      document.write("<br>Exam 2: " + testTwo);
+      document.write("<br>Exam 3: " + testThree);
+      document.write("<br>Average: " + average.toFixed());
+      document.write("<br>Course grade: ", gradeLetter, "<br>");
+
+      switch(gradeLetter)
+      {
+        case "A" :
+          document.write("Great job, keep it up");
+          break;
+        case "B" :
+          document.write("Very nice work");
+          break;
+        case "C" :
+          document.write("You can do it, keep studying");
+          break;
+       case "D" :
+          document.write("You need some help, see the teacher");
+          break;
+        case "F" :
+          document.write("Please schedule an appointment with your advisor");
+          break;
+      }
+
+    </script>
+
+  </body>
+</html>
