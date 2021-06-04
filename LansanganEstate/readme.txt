@@ -1,0 +1,1 @@
+Lansangan Estate is a nonprofit organization to help end homelessness in the philippines. When I navigated to their Facebook to donate, I realized that they didn't have a website for their organization. I'm not in the best place financially myself and I could used the experience of building a website for a client, so I volunteered my services for this cause!
